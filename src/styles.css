@@ -2,9 +2,27 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+p {
+  text-align: right;
+}
+
 ul {
   margin: 0;
   padding: 0;
+  text-align: right;
 }
 
 li {
@@ -22,5 +40,24 @@ li {
 }
 
 .forecast-container {
-  margin: 20px 0;
+  margin: 25px 0 0;
+}
+
+.forecast-container ul {
+  text-align: center;
+}
+
+.current-temperature {
+  margin-top: 15px;
+}
+
+.temperature {
+  font-size: 74px;
+  font-weight: 200;
+  line-height: 1;
+}
+
+.degrees {
+  position: relative;
+  bottom: 40px;
 }
