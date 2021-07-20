@@ -1,3 +1,23 @@
 body {
   font-family: "Rubik", sans-serif;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.forecast-container {
+  margin: 20px 0;
+}
+
+.weather-app {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+}
