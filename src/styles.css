@@ -9,18 +9,19 @@ h1 {
   margin: 0;
 }
 
-h2 {
-  font-size: 16px;
+h1 {
+  font-weight: 400;
 }
 
-h1,
 h2 {
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 200;
 }
 
 p {
   text-align: right;
   margin-top: 15px;
+  font-weight: 200;
 }
 
 ul {
@@ -31,10 +32,39 @@ ul {
 
 li {
   list-style: none;
+  font-weight: 200;
 }
 
-small {
+li span {
+  color: #fff06c;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #fff06c;
+}
+
+a:visited {
+  color: #fff06c;
+}
+
+small a:visited {
   color: #ff8181;
+}
+
+a:hover,
+small a:hover {
+  color: #f06666;
+}
+
+small,
+small a {
+  color: #ff8181;
+}
+
+small a {
+  text-decoration: underline;
 }
 
 .weather-app-container {
@@ -43,14 +73,14 @@ small {
 }
 
 .weather-app {
-  padding: 25px 22px 8px;
+  padding: 22px 22px 8px;
   background: #ff8181;
   border-radius: 4px;
   margin-bottom: 8px;
 }
 
 .forecast-container {
-  margin: 25px 0 0;
+  margin: 16px 0 0;
 }
 
 .forecast-container ul {
@@ -64,7 +94,7 @@ button {
   border: 2px solid #fff06c;
   color: #ff8181;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 input:focus,
@@ -98,7 +128,7 @@ button {
 }
 
 .daily-forecast li {
-  margin-bottom: 10px;
+  margin: 8px;
 }
 
 .weather-data {
@@ -115,6 +145,7 @@ button {
 .degrees {
   position: relative;
   bottom: 40px;
+  left: -6px;
 }
 
 .searchbox {
