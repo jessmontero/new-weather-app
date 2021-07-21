@@ -1,9 +1,11 @@
 body {
   font-family: "Rubik", sans-serif;
+  color: white;
 }
 
 h1 {
   font-size: 34px;
+  color: #fff06c;
 }
 
 h2 {
@@ -30,13 +32,15 @@ li {
 }
 
 .weather-app-container {
-  max-width: 600px;
+  max-width: 550px;
   margin: 20px auto;
 }
 
 .weather-app {
   padding: 20px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+  background: #ff8181;
+  border-radius: 4px;
 }
 
 .forecast-container {
@@ -47,6 +51,16 @@ li {
   text-align: center;
 }
 
+input,
+button {
+  padding: 8px;
+  background-color: #fff06c;
+  border: 2px solid #fff06c;
+  color: #ff8181;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .current-temperature {
   margin-top: 15px;
 }
@@ -55,9 +69,23 @@ li {
   font-size: 74px;
   font-weight: 200;
   line-height: 1;
+  color: #fff06c;
 }
 
 .degrees {
   position: relative;
   bottom: 40px;
+}
+
+.searchbox {
+  padding: 0 12px 5px;
+}
+
+div .main-image {
+  width: 75px;
+  margin: 0 auto;
+}
+
+.main-image-container {
+  padding: 0;
 }
