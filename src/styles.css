@@ -6,6 +6,7 @@ body {
 h1 {
   font-size: 34px;
   color: #fff06c;
+  margin: 0;
 }
 
 h2 {
@@ -19,6 +20,7 @@ h2 {
 
 p {
   text-align: right;
+  margin-top: 15px;
 }
 
 ul {
@@ -31,16 +33,20 @@ li {
   list-style: none;
 }
 
+small {
+  color: #ff8181;
+}
+
 .weather-app-container {
   max-width: 550px;
   margin: 20px auto;
 }
 
 .weather-app {
-  padding: 20px;
-  /*border: 1px solid black;*/
+  padding: 25px 22px 8px;
   background: #ff8181;
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .forecast-container {
@@ -61,7 +67,41 @@ button {
   font-weight: 500;
 }
 
+input:focus,
+button:focus {
+  outline: none;
+  border: 2px solid white;
+}
+
+.searchfield {
+  border-radius: 4px 0 0 4px;
+  border-right: 1px solid rgba(255, 129, 129, 0.2);
+}
+
+button {
+  border-radius: 0 4px 4px 0;
+  border-left: 1px solid rgba(255, 129, 129, 0.2);
+}
+
+.button {
+  transition: all 100ms ease-in-out;
+}
+
+.button:hover {
+  background: #f06666;
+  border: 2px solid #f06666;
+  color: white;
+}
+
 .current-temperature {
+  margin-top: 6px;
+}
+
+.daily-forecast li {
+  margin-bottom: 10px;
+}
+
+.weather-data {
   margin-top: 15px;
 }
 
