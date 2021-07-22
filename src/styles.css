@@ -1,6 +1,7 @@
 body {
   font-family: "Rubik", sans-serif;
   color: white;
+  font-size: 15px;
 }
 
 h1 {
@@ -73,8 +74,12 @@ small a {
 }
 
 .weather-app {
-  padding: 22px 22px 8px;
-  background: #ff8181;
+  padding: 22px 22px 10px;
+  background: radial-gradient(
+    circle at 10% 10%,
+    rgb(253, 193, 104) 0%,
+    rgb(251, 128, 128) 90%
+  );
   border-radius: 4px;
   margin-bottom: 8px;
 }
@@ -90,8 +95,8 @@ small a {
 input,
 button {
   padding: 8px;
-  background-color: #fff06c;
-  border: 2px solid #fff06c;
+  background-color: white;
+  border: 2px solid white;
   color: #ff8181;
   font-size: 16px;
   font-weight: 400;
@@ -128,11 +133,11 @@ button {
 }
 
 .daily-forecast li {
-  margin: 8px;
+  margin: 4px;
 }
 
 .weather-data {
-  margin-top: 15px;
+  margin-top: 6px;
 }
 
 .temperature {
@@ -162,6 +167,5 @@ div .main-image {
 }
 
 .specific-data li {
-  font-size: 16px;
-  line-height: 21px;
+  line-height: 20px;
 }
