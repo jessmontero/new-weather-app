@@ -1,6 +1,15 @@
-let currentDayTime = document.querySelector("#day-time");
+function formatDate(timestamp) {
 
-let date = new Date();
+let date = new Date(timestamp);
+let hours = date.getHours(0);
+if(hours < 10) {
+    hours = `0${hours}`;
+}
+
+let minutes = date.getMinutes();
+if(minutes <10) {
+    minutes = `0${minutes}`;
+}
 
 let days = [
   "Sunday",
@@ -13,14 +22,9 @@ let days = [
 ];
 let day = days[date.getDay()];
 
-let hours = ("0" + date.getHours()).slice(-2);
-let minutes = ("0" + date.getMinutes()).slice(-2);
+return `${day} ${hours}:${minutes}`;
 
-let dayTime = `${day} ${hours}:${minutes}`;
-
-currentDayTime.innerHTML = dayTime;
-
-//
+}
 
 function showTemperature(response) {
   document.querySelector("#search-input").value = "";
@@ -37,7 +41,7 @@ function showTemperature(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  console.log(response.data); 
+  document.querySelector("#day-time").innerHTML = formatDate(response.data.dt*1000);
 }
 
 function search(city) {

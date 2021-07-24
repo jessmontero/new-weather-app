@@ -1,7 +1,7 @@
 body {
   font-family: "Rubik", sans-serif;
   color: white;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 h1 {
@@ -37,7 +37,7 @@ li {
   font-weight: 200;
 }
 
-li span {
+li .high-temp {
   color: #fff06c;
   font-weight: 400;
 }
@@ -169,5 +169,5 @@ div .main-image {
 }
 
 .specific-data li {
-  line-height: 20px;
+  line-height: 22px;
 }
