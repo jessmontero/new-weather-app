@@ -29,7 +29,7 @@ function showTemperature(response) {
     response.data.main.temp
   );
   document.querySelector("#conditions").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
   document.querySelector("#feels-like").innerHTML = Math.round(
     response.data.main.feels_like
   );
@@ -37,6 +37,7 @@ function showTemperature(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  console.log(response.data); 
 }
 
 function search(city) {
@@ -71,4 +72,4 @@ form.addEventListener("submit", handleSubmit);
 let button = document.querySelector("#current-location-button");
 button.addEventListener("click", getCurrentPosition);
 
-search("Miami");
+search("London");

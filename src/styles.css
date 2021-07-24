@@ -17,6 +17,7 @@ h1 {
 h2 {
   font-size: 16px;
   font-weight: 200;
+  text-transform: capitalize;
 }
 
 p {
@@ -96,7 +97,7 @@ input,
 button {
   padding: 8px;
   background-color: white;
-  border: 2px solid white;
+  border: 1px solid white;
   color: #ff8181;
   font-size: 16px;
   font-weight: 400;
@@ -105,12 +106,13 @@ button {
 input:focus,
 button:focus {
   outline: none;
-  border: 2px solid white;
+  border: 1px solid #ff8181;
 }
 
 .searchfield {
   border-radius: 4px 0 0 4px;
   border-right: 1px solid rgba(255, 129, 129, 0.2);
+  box-shadow: inset 0px 1px 2px 1px rgba(154, 154, 154, 0.2);
 }
 
 button {
@@ -124,7 +126,7 @@ button {
 
 .button:hover {
   background: #f06666;
-  border: 2px solid #f06666;
+  border: 1px solid #f06666;
   color: white;
 }
 
