@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f8fba63b40.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css">
     <title>Weather App</title>
 </head>
@@ -17,9 +18,9 @@
     <div class="container">
       <div class="weather-app-container">
       <div class="weather-app">
-        <form>
+        <form id="city-search">
           <div class="row searchbox">
-            <input type="text" class="col-9 searchfield" autocomplete="off" />
+            <input type="text" class="col-9 searchfield" autocomplete="off" id="search-input"/>
             <input type="submit" value="Search" class="col-2 button submit-button" />
             <button class="col-1 button" id="current-location-button"><i class="fas fa-map-marker-alt pin"></i></button>
           </div>
@@ -27,16 +28,16 @@
       <div class="current-temperature">
       <div class="row">
         <div class="col-6">
-        <h1>Amsterdam</h1>
-        <h2>Sunny</h2>
+        <h1 id="city"></h1>
+        <h2 id="conditions"></h2>
         </div>
         <div class="col-6">
-          <p>Sunday 11:00</p>
+          <p id="day-time"></p>
         </div>
       </div>
       <div class="row weather-data">
         <div class="col-5">
-          <span class="temperature">18</span>
+          <span class="temperature" id="temperature"></span>
           <span class="degrees">
             <a href="#" id="centigrade">°C</a>
             <span class="degree-divider">|</span>
@@ -48,9 +49,9 @@
         </div>
         <div class="col-4 specific-data my-auto">
           <ul>
-            <li>Feels Like: 16°</li>
-            <li>Humidity: 45%</li>
-            <li>Wind: 12km/h</li>
+            <li>Feels Like: <span id="feels-like"></span>°</li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span>km/h</li>
           </ul>
         </div>
         </div>
