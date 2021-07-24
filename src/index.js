@@ -46,6 +46,14 @@ function showTemperature(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute("src", `images/${response.data.weather[0].icon}.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  let body = document.querySelector("#weather-app");
+
+  if (response.data.main.temp > 17) {
+      body.style.background = "radial-gradient(circle at 10% 10%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%)";
+  } else {
+     body.style.background = "radial-gradient(circle at 10% 10%, rgb(182, 244, 146) 0%, rgb(51, 139, 147) 90%)";
+  }
 }
 
 
