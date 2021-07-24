@@ -42,7 +42,12 @@ function showTemperature(response) {
     response.data.wind.speed
   );
   document.querySelector("#day-time").innerHTML = formatDate(response.data.dt*1000);
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src", `images/${response.data.weather[0].icon}.png`);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
+
 
 function search(city) {
   let apiKey = "ddf0440bcec2a49b426ccbeada3e4574";

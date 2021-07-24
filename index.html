@@ -17,7 +17,7 @@
 <body>
     <div class="container">
       <div class="weather-app-container">
-      <div class="weather-app">
+      <div id="weather-app">
         <form id="city-search">
           <div class="row searchbox">
             <input type="text" class="col-9 searchfield" autocomplete="off" id="search-input"/>
@@ -31,7 +31,8 @@
         <h1 id="city"></h1>
         <h2 id="conditions"></h2>
         </div>
-        <div class="col-6">
+        <div class="col-6 last-updated">
+          <p>Last updated:</p>
           <p id="day-time"></p>
         </div>
       </div>
@@ -45,11 +46,11 @@
           </span>
         </div>
         <div class="col-3 main-image-container my-auto">
-          <img src="images/sunny.png" alt="sunny" class="main-image">
+          <img src="" alt="" id="icon" class="main-image">
         </div>
         <div class="col-4 specific-data my-auto">
           <ul>
-            <li>Feels Like: <span id="feels-like"></span>°</li>
+            <li>Feels like: <span id="feels-like"></span>°</li>
             <li>Humidity: <span id="humidity"></span>%</li>
             <li>Wind: <span id="wind"></span>km/h</li>
           </ul>
@@ -59,12 +60,12 @@
       <div class="forecast-container">
       <div class="row daily-forecast">
         <div class="col-2">
-          <ul>
+          <ul class="my-auto">
             <li>
               Sun
             </li>
             <li>
-              <img src="images/sunny.png" alt="sunny" width="40px">
+              <img src="images/02d.png" alt="few clouds" width="40px">
             </li>
             <li>
               <span class="high-temp">20°</span>/15°
@@ -72,12 +73,12 @@
           </ul>
         </div>
         <div class="col-2">
-          <ul>
+          <ul class="my-auto">
             <li>
               Mon
             </li>
             <li>
-              <img src="images/sunny.png" alt="sunny" width="40px">
+              <img src="images/02d.png" alt="few clouds" width="40px">
             </li>
             <li>
               <span class="high-temp">20°</span>/15°
@@ -85,12 +86,12 @@
           </ul>
         </div>
         <div class="col-2">
-          <ul>
+          <ul class="my-auto">
             <li>
               Tue
             </li>
             <li>
-              <img src="images/sunny.png" alt="sunny" width="40px">
+              <img src="images/02d.png" alt="few clouds" width="40px">
             </li>
             <li>
               <span class="high-temp">20°</span>/15°
@@ -98,12 +99,12 @@
           </ul>
         </div>
         <div class="col-2">
-          <ul>
+          <ul class="my-auto">
             <li>
               Wed
             </li>
             <li>
-              <img src="images/sunny.png" alt="sunny" width="40px">
+              <img src="images/02d.png" alt="few clouds" width="40px">
             </li>
             <li>
               <span class="high-temp">20°</span>/15°
@@ -111,12 +112,12 @@
           </ul>
         </div>
         <div class="col-2">
-          <ul>
+          <ul class="my-auto"> 
             <li>
               Thu
             </li>
             <li>
-              <img src="images/sunny.png" alt="sunny" width="40px">
+              <img src="images/02d.png" alt="few clouds" width="40px">
             </li>
             <li>
               <span class="high-temp">20°</span>/15°
@@ -124,12 +125,12 @@
           </ul>
         </div>
         <div class="col-2">
-          <ul>
+          <ul class="my-auto">
             <li>
               Fri
             </li>
             <li>
-              <img src="images/sunny.png" alt="sunny" width="40px">
+              <img src="images/02d.png" alt="few clouds" width="40px">
             </li>
             <li>
               <span class="high-temp">20°</span>/15°
