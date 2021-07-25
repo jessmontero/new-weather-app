@@ -6,11 +6,11 @@ body {
 
 h1 {
   font-size: 34px;
-  color: #fff06c;
   margin: 0;
 }
 
-h1 {
+h1,
+li .high-temp {
   font-weight: 400;
 }
 
@@ -24,7 +24,6 @@ p {
   font-size: 13px;
   text-align: right;
   font-weight: 200;
-  line-height: 0px;
 }
 
 ul {
@@ -38,27 +37,19 @@ li {
   font-weight: 200;
 }
 
-li .high-temp {
-  color: #fff06c;
-  font-weight: 400;
-}
-
 a {
   text-decoration: none;
 }
 
 a:visited {
-  color: white;
+  color: #fff06c;
 }
 
 small a:visited {
   color: #d1d1d1;
 }
 
-a:hover {
-  color: #fff06c;
-}
-
+a:hover,
 small a:hover {
   color: #888888;
 }
@@ -73,7 +64,7 @@ small a {
 }
 
 .weather-data .active {
-  color: #fff06c;
+  color: white;
   cursor: default;
 }
 
@@ -157,7 +148,7 @@ button {
   font-size: 74px;
   font-weight: 200;
   line-height: 1;
-  color: #fff06c;
+  color: white;
 }
 
 .degrees {
@@ -176,7 +167,7 @@ div .main-image {
 }
 
 div .last-updated {
-  margin-top: 13px;
+  margin-top: -7px;
 }
 
 .main-image-container {
@@ -184,8 +175,8 @@ div .last-updated {
 }
 
 .specific-data li {
-  line-height: 20px;
-  font-size: 15px;
+  line-height: 21px;
+  font-size: 13px;
 }
 
 .daily-forecast li {
