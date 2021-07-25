@@ -45,20 +45,22 @@ li .high-temp {
 
 a {
   text-decoration: none;
-  color: #fff06c;
 }
 
 a:visited {
-  color: #fff06c;
+  color: white;
 }
 
 small a:visited {
   color: #d1d1d1;
 }
 
-a:hover,
+a:hover {
+  color: #fff06c;
+}
+
 small a:hover {
-  color: #b1b1b1;
+  color: #888888;
 }
 
 small,
@@ -68,6 +70,15 @@ small a {
 
 small a {
   text-decoration: underline;
+}
+
+.weather-data .active {
+  color: #fff06c;
+  cursor: default;
+}
+
+.weather-data .active:hover {
+  text-decoration: none;
 }
 
 .weather-app-container {
