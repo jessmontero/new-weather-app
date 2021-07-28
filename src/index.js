@@ -26,6 +26,31 @@ return `${day} ${hours}:${minutes}`;
 
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+     `
+      <div class="col-2">
+        <ul class="my-auto">
+            <li class="forecast-day">
+                Sun
+            </li>
+            <li>
+                <img src="images/02d.png" alt="" width="40px">
+            </li>
+            <li>
+                <span class="forecast-max-temp">20°</span><span class="forecast-min-temp">/15°</span>
+            </li>
+        </ul>
+      </div>
+    `;
+forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   document.querySelector("#search-input").value = "";
   document.querySelector("#city").innerHTML = response.data.name;
@@ -116,3 +141,5 @@ centigradeLink.addEventListener("click", displayCentigrade);
 
 
 search("London");
+
+displayForecast();
