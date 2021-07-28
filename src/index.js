@@ -27,10 +27,15 @@ return `${day} ${hours}:${minutes}`;
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
+  let apiKey = "ddf0440bcec2a49b426ccbeada3e4574";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=current,minutely,hourly,alerts&appid=${apiKey}&units=metric`;
+  
+  axios.get(apiUrl).then(displayForecast);
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data);
+
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -152,5 +157,3 @@ centigradeLink.addEventListener("click", displayCentigrade);
 
 
 search("London");
-
-displayForecast();
