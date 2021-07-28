@@ -33,31 +33,42 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayForecast(response) {
-  console.log(response.data);
+
+  let forecast = response.data.daily;
 
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
-  days.forEach(function (day) {
+  
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
     forecastHTML =
     forecastHTML +
      `
       <div class="col-2">
         <ul class="my-auto">
             <li class="forecast-day">
-                ${day}
+                ${formatDay(forecastDay.dt)}
             </li>
             <li>
-                <img src="images/02d.png" alt="" width="40px">
+                <img src="images/${forecastDay.weather[0].icon}.png" alt="${forecastDay.weather[0].description}" width="40px">
             </li>
             <li>
-                <span class="forecast-max-temp">20°</span><span class="forecast-min-temp">/15°</span>
+                <span class="forecast-max-temp">${Math.round(forecastDay.temp.max)}°</span><span class="forecast-min-temp">/${Math.round(forecastDay.temp.min)}°</span>
             </li>
         </ul>
       </div>
     `;
+    }
   });
 forecastHTML = forecastHTML + `</div>`;
 
