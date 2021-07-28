@@ -26,17 +26,23 @@ return `${day} ${hours}:${minutes}`;
 
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+}
+
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  forecastHTML =
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
     forecastHTML +
      `
       <div class="col-2">
         <ul class="my-auto">
             <li class="forecast-day">
-                Sun
+                ${day}
             </li>
             <li>
                 <img src="images/02d.png" alt="" width="40px">
@@ -47,7 +53,9 @@ function displayForecast() {
         </ul>
       </div>
     `;
+  });
 forecastHTML = forecastHTML + `</div>`;
+
 forecastElement.innerHTML = forecastHTML;
 }
 
@@ -81,6 +89,9 @@ function showTemperature(response) {
   } else {
      body.style.background = "radial-gradient(circle at 10% 10%, rgb(143, 239, 175) 0%, rgb(51, 139, 147) 90%)";
   }
+
+  getForecast(response.data.coord);
+
 }
 
 
