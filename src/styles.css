@@ -83,7 +83,7 @@ small a {
   background: radial-gradient(
     circle at 10% 10%,
     rgb(253, 193, 104) 0%,
-    rgb(251, 128, 128) 90%
+    rgb(244, 96, 96) 90%
   );
   border-radius: 4px;
   margin-bottom: 8px;

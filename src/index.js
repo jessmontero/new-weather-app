@@ -52,7 +52,7 @@ function showTemperature(response) {
   let body = document.querySelector("#weather-app");
 
   if (response.data.main.temp > 17) {
-      body.style.background = "radial-gradient(circle at 10% 10%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%)";
+      body.style.background = "radial-gradient(circle at 10% 10%, rgb(253, 193, 104) 0%, rgb(244, 96, 96) 90%)";
   } else {
      body.style.background = "radial-gradient(circle at 10% 10%, rgb(143, 239, 175) 0%, rgb(51, 139, 147) 90%)";
   }
