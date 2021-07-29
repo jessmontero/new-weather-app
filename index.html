@@ -21,28 +21,24 @@
         <form id="city-search">
           <div class="row searchbox">
             <input type="text" class="col-9 searchfield" autocomplete="off" id="search-input"/>
-            <input type="submit" value="Search" class="col-2 button submit-button" />
+            <input type="submit" value="Search" class="col-2 button" id="submit-button"/>
             <button class="col-1 button" id="current-location-button"><i class="fas fa-map-marker-alt pin"></i></button>
           </div>
         </form>
       <div class="current-temperature">
       <div class="row">
-        <div class="col-6">
+        <div class="col-7">
         <h1 id="city"></h1>
         <h2 id="conditions"></h2>
         </div>
-        <div class="col-6 last-updated">
+        <div class="col-5 last-updated">
           <p>Last Updated - <span id="day-time"></span></p>
         </div>
       </div>
       <div class="row weather-data">
-        <div class="col-5">
+        <div class="col-5 main-temperature">
           <span class="temperature" id="temperature"></span>
-          <span class="degrees">
-            <a href="#" id="centigrade" class="active">°C</a>
-            <span class="degree-divider">|</span>
-            <a href="#" id="fahrenheit">°F</a>
-          </span>
+          <span class="degrees">°C</span>
         </div>
         <div class="col-3 main-image-container my-auto">
           <img src="" alt="" id="icon" class="main-image">

@@ -60,6 +60,10 @@ small a {
   text-decoration: underline;
 }
 
+img {
+  opacity: 70%;
+}
+
 .weather-data .active {
   color: white;
   cursor: default;
@@ -152,7 +156,7 @@ button {
 }
 
 div .main-image {
-  width: 70px;
+  width: 60px;
   margin: 0 auto;
 }
 
@@ -162,6 +166,10 @@ div .last-updated {
 
 .main-image-container {
   padding: 0;
+}
+
+.main-temperature {
+  padding: 0 0 0 12px;
 }
 
 .specific-data li,

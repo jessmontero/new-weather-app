@@ -145,28 +145,4 @@ form.addEventListener("submit", handleSubmit);
 let button = document.querySelector("#current-location-button");
 button.addEventListener("click", getCurrentPosition);
 
-function displayFahrenheit(event) {
-  event.preventDefault();
-  centigradeLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheitTemperature = (centigradeTemperature * 9) / 5 + 32;
-  document.querySelector("#temperature").innerHTML = Math.round(fahrenheitTemperature);
-}
-
-function displayCentigrade(event) {
-  event.preventDefault();
-  centigradeLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  document.querySelector("#temperature").innerHTML = Math.round(centigradeTemperature);
-}
-
-let centigradeTemperature = null;
-
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", displayFahrenheit);
-
-let centigradeLink = document.querySelector("#centigrade");
-centigradeLink.addEventListener("click", displayCentigrade);
-
-
 search("London");
