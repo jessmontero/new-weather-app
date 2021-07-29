@@ -7,10 +7,6 @@ body {
 h1 {
   font-size: 34px;
   margin: 0;
-}
-
-h1,
-li .forecast-max-temp {
   font-weight: 400;
 }
 
@@ -47,7 +43,7 @@ a:visited {
 }
 
 small a:visited {
-  color: #d1d1d1;
+  color: #bebebe;
 }
 
 a:hover,
@@ -57,7 +53,7 @@ small a:hover {
 
 small,
 small a {
-  color: #d1d1d1;
+  color: #bbbbbb;
 }
 
 small a {
@@ -99,7 +95,7 @@ button {
   padding: 8px;
   background-color: white;
   border: 1px solid white;
-  color: #d1d1d1;
+  color: #bbbbbb;
   font-size: 16px;
   font-weight: 400;
 }
@@ -107,7 +103,7 @@ button {
 input:focus,
 button:focus {
   outline: none;
-  border: 1px solid #d1d1d1;
+  border: 1px solid #bbbbbb;
 }
 
 .searchfield {
@@ -125,8 +121,8 @@ button {
 }
 
 .button:hover {
-  background: #d1d1d1;
-  border: 1px solid #d1d1d1;
+  background: #bbbbbb;
+  border: 1px solid #bbbbbb;
   color: white;
 }
 
@@ -156,7 +152,7 @@ button {
 }
 
 div .main-image {
-  width: 75px;
+  width: 70px;
   margin: 0 auto;
 }
 
@@ -168,7 +164,8 @@ div .last-updated {
   padding: 0;
 }
 
-.specific-data li {
+.specific-data li,
+.max-min-temp {
   line-height: 21px;
-  font-size: 13px;
+  font-size: 14px;
 }

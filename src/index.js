@@ -63,7 +63,9 @@ function displayForecast(response) {
                 <img src="images/${forecastDay.weather[0].icon}.png" alt="${forecastDay.weather[0].description}" width="40px">
             </li>
             <li>
+            <span class="max-min-temp">
                 <span class="forecast-max-temp">${Math.round(forecastDay.temp.max)}°</span><span class="forecast-min-temp">/${Math.round(forecastDay.temp.min)}°</span>
+            </span>
             </li>
         </ul>
       </div>
@@ -100,10 +102,10 @@ function showTemperature(response) {
 
   let body = document.querySelector("#weather-app");
 
-  if (response.data.main.temp > 17) {
-      body.style.background = "radial-gradient(circle at 10% 10%, rgb(253, 193, 104) 0%, rgb(244, 96, 96) 90%)";
+  if (response.data.main.temp > 18) {
+      body.style.background = "linear-gradient(to top, #f2616b 0%, #fcaa6d 100%)";
   } else {
-     body.style.background = "radial-gradient(circle at 10% 10%, rgb(143, 239, 175) 0%, rgb(51, 139, 147) 90%)";
+     body.style.background = "linear-gradient(to top, #338b93 0%, #68d8a8 100%)";
   }
 
   getForecast(response.data.coord);
