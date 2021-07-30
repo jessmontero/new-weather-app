@@ -17,7 +17,7 @@ h2 {
 }
 
 p {
-  font-size: 13px;
+  font-size: 12px;
   text-align: right;
   font-weight: 200;
 }
@@ -34,43 +34,20 @@ li {
 }
 
 a {
-  text-decoration: none;
-  color: #fff06c;
-}
-
-a:visited {
-  color: #fff06c;
-}
-
-small a:visited {
+  text-decoration: underline;
   color: #bebebe;
 }
 
-a:hover,
-small a:hover {
+a:visited {
+  color: #bebebe;
+}
+
+a:hover {
   color: #888888;
 }
 
-small,
-small a {
-  color: #bbbbbb;
-}
-
-small a {
-  text-decoration: underline;
-}
-
-/*img {
-  opacity: 25%;
-}*/
-
-.weather-data .active {
-  color: white;
-  cursor: default;
-}
-
-.weather-data .active:hover {
-  text-decoration: none;
+small {
+  color: #bebebe;
 }
 
 .weather-app-container {
@@ -79,13 +56,13 @@ small a {
 }
 
 #weather-app {
-  padding: 28px 22px 8px;
+  padding: 30px 22px 10px;
   border-radius: 4px;
   margin-bottom: 8px;
 }
 
 .forecast-container {
-  margin: 16px 0 0;
+  margin: 10px 0 0;
 }
 
 .forecast-container li {
@@ -121,6 +98,10 @@ button {
 }
 
 .button {
+  border-radius: 0;
+}
+
+.location-button {
   transition: all 100ms ease-in-out;
 }
 
@@ -130,16 +111,8 @@ button {
   color: white;
 }
 
-.current-temperature {
-  margin-top: 6px;
-}
-
-.weather-data {
-  margin-top: 6px;
-}
-
 .temperature {
-  font-size: 74px;
+  font-size: 70px;
   font-weight: 200;
   line-height: 1;
   color: white;
@@ -147,7 +120,7 @@ button {
 
 .degrees {
   position: relative;
-  bottom: 40px;
+  bottom: 37px;
   left: -3px;
 }
 
@@ -160,15 +133,14 @@ div .main-image {
   margin: 0 auto;
 }
 
-div .last-updated {
-  margin-top: -7px;
-}
-
 .main-image-container {
   padding: 0;
 }
 
-.city,
+.city {
+  padding: 6px 0 0 18px;
+}
+
 .main-temperature {
   padding: 0 0 0 18px;
 }
@@ -180,6 +152,6 @@ div .last-updated {
 
 .specific-data li,
 .max-min-temp {
-  line-height: 21px;
+  line-height: 20px;
   font-size: 14px;
 }
