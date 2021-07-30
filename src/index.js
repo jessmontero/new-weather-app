@@ -60,7 +60,7 @@ function displayForecast(response) {
                 ${formatDay(forecastDay.dt)}
             </li>
             <li>
-                <img src="images/${forecastDay.weather[0].icon}.png" alt="${forecastDay.weather[0].description}" width="40px">
+                <img src="images/${forecastDay.weather[0].icon}.png" alt="${forecastDay.weather[0].description}" width="34px">
             </li>
             <li>
             <span class="max-min-temp">
@@ -101,11 +101,21 @@ function showTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   let body = document.querySelector("#weather-app");
+  let submitButton = document.querySelector("#submit-button");
+  let locationButton = document.querySelector("#current-location-button");
 
   if (response.data.main.temp > 18) {
-      body.style.background = "linear-gradient(to top, #f2616b 0%, #fcaa6d 100%)";
+      body.style.background = "linear-gradient(to top, #fcaa6d 5%, #f2616b 100%)";
+      submitButton.classList.add("style-warm");
+      locationButton.classList.add("style-warm");
+      submitButton.classList.remove("style-cold");
+      locationButton.classList.remove("style-cold");
   } else {
-     body.style.background = "linear-gradient(to top, #338b93 0%, #68d8a8 100%)";
+      body.style.background = "linear-gradient(to top, #68d8a8 0%, #338b93 100%)";
+      submitButton.classList.add("style-cold");
+      locationButton.classList.add("style-cold");
+      submitButton.classList.remove("style-warm");
+      locationButton.classList.remove("style-warm");
   }
 
   getForecast(response.data.coord);

@@ -43,7 +43,7 @@ a:visited {
 }
 
 a:hover {
-  color: #888888;
+  color: #9b9b9b;
 }
 
 small {
@@ -62,39 +62,37 @@ small {
 }
 
 .forecast-container {
-  margin: 10px 0 0;
+  margin: 14px 0 5px;
 }
 
 .forecast-container li {
   text-align: center;
-  margin: 4px;
   line-height: 36px;
 }
 
 input,
 button {
-  padding: 8px;
+  padding: 7px;
   background-color: white;
-  border: 1px solid white;
-  color: #bbbbbb;
-  font-size: 16px;
+  border: 1px solid rgb(245, 245, 245);
+  color: #9b9b9b;
+  font-size: 15px;
   font-weight: 400;
 }
 
 input:focus,
 button:focus {
   outline: none;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #dadada;
 }
 
 .searchfield {
   border-radius: 4px 0 0 4px;
-  box-shadow: inset 0px 1px 2px 1px rgba(154, 154, 154, 0.2);
+  box-shadow: inset 1px 2px 1px 1px rgba(199, 199, 199, 0.2);
 }
 
 button {
   border-radius: 0 4px 4px 0;
-  border-left: 1px solid rgba(187, 187, 187, 0.2);
 }
 
 .button {
@@ -105,9 +103,23 @@ button {
   transition: all 100ms ease-in-out;
 }
 
-.button:hover {
-  background: #bbbbbb;
-  border: 1px solid #bbbbbb;
+.style-warm {
+  color: #f2616b;
+}
+
+.style-warm:hover {
+  background: #fba26d;
+  border: 1px solid #fba26d;
+  color: white;
+}
+
+.style-cold {
+  color: #338b93;
+}
+
+.style-cold:hover {
+  background: #62cfa6;
+  border: 1px solid #62cfa6;
   color: white;
 }
 
