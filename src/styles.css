@@ -60,9 +60,9 @@ small a {
   text-decoration: underline;
 }
 
-img {
-  opacity: 70%;
-}
+/*img {
+  opacity: 25%;
+}*/
 
 .weather-data .active {
   color: white;
@@ -79,7 +79,7 @@ img {
 }
 
 #weather-app {
-  padding: 24px 22px 8px;
+  padding: 28px 22px 8px;
   border-radius: 4px;
   margin-bottom: 8px;
 }
@@ -152,7 +152,7 @@ button {
 }
 
 .searchbox {
-  padding: 0 12px 5px;
+  padding: 0 18px 5px;
 }
 
 div .main-image {
@@ -168,8 +168,14 @@ div .last-updated {
   padding: 0;
 }
 
+.city,
 .main-temperature {
-  padding: 0 0 0 12px;
+  padding: 0 0 0 18px;
+}
+
+.specific-data,
+.last-updated {
+  padding: 0 18px 0 0;
 }
 
 .specific-data li,
