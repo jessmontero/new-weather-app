@@ -167,3 +167,15 @@ div .main-image {
   line-height: 20px;
   font-size: 14px;
 }
+
+@media (max-width: 550px) {
+  #weather-app {
+    padding: 30px 16px 10px;
+  }
+  .button {
+    padding: 0px;
+  }
+  .location-button {
+    padding: 0px;
+  }
+}

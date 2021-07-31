@@ -105,7 +105,7 @@ function showTemperature(response) {
   let locationButton = document.querySelector("#current-location-button");
 
   if (response.data.main.temp > 18) {
-      body.style.background = "linear-gradient(to top, #fcaa6d 5%, #f2616b 100%)";
+      body.style.background = "linear-gradient(to top, #fcaa6d 0%, #f2616b 100%)";
       submitButton.classList.add("style-warm");
       locationButton.classList.add("style-warm");
       submitButton.classList.remove("style-cold");
