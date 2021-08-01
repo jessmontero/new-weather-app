@@ -2,24 +2,25 @@ body {
   font-family: "Rubik", sans-serif;
   color: white;
   font-size: 16px;
+  font-weight: 300;
 }
 
 h1 {
-  font-size: 34px;
+  font-size: 32px;
+  font-weight: 300;
   margin: 0;
-  font-weight: 400;
 }
 
 h2 {
-  font-size: 16px;
-  font-weight: 200;
+  font-size: 17px;
+  font-weight: 300;
   text-transform: capitalize;
+  margin: 0;
 }
 
 p {
   font-size: 12px;
   text-align: right;
-  font-weight: 200;
 }
 
 ul {
@@ -30,28 +31,27 @@ ul {
 
 li {
   list-style: none;
-  font-weight: 200;
 }
 
 a {
   text-decoration: underline;
-  color: #bebebe;
-}
-
-a:visited {
-  color: #bebebe;
-}
-
-a:hover {
   color: #9b9b9b;
 }
 
+a:visited {
+  color: #9b9b9b;
+}
+
+a:hover {
+  color: #797979;
+}
+
 small {
-  color: #bebebe;
+  color: #9b9b9b;
 }
 
 .weather-app-container {
-  max-width: 550px;
+  max-width: 520px;
   margin: 20px auto;
 }
 
@@ -62,12 +62,16 @@ small {
 }
 
 .forecast-container {
-  margin: 14px 0 5px;
+  margin: 8px 0 5px;
 }
 
 .forecast-container li {
   text-align: center;
   line-height: 36px;
+}
+
+.weather-data {
+  margin-top: 15px;
 }
 
 input,
@@ -99,41 +103,42 @@ button {
   border-radius: 0;
 }
 
-.location-button {
-  transition: all 100ms ease-in-out;
+.location-button,
+.button {
+  transition: all 200ms ease-in-out;
 }
 
 .style-warm {
-  color: #f2616b;
+  color: #f8906d;
 }
 
 .style-warm:hover {
-  background: #fba26d;
-  border: 1px solid #fba26d;
+  background: #f46d6c;
+  border: 1px solid #f46d6c;
   color: white;
 }
 
 .style-cold {
-  color: #338b93;
+  color: #71c1a6;
 }
 
 .style-cold:hover {
-  background: #62cfa6;
-  border: 1px solid #62cfa6;
+  background: #439998;
+  border: 1px solid #439998;
   color: white;
 }
 
 .temperature {
-  font-size: 70px;
-  font-weight: 200;
+  font-size: 66px;
   line-height: 1;
-  color: white;
 }
 
 .degrees {
   position: relative;
-  bottom: 37px;
-  left: -3px;
+  font-weight: 400;
+  font-size: 20px;
+  bottom: 32px;
+  left: -5px;
 }
 
 .searchbox {
@@ -141,8 +146,8 @@ button {
 }
 
 div .main-image {
-  width: 60px;
-  margin: 0 auto;
+  width: 55px;
+  margin-left: 6px;
 }
 
 .main-image-container {
@@ -150,7 +155,7 @@ div .main-image {
 }
 
 .city {
-  padding: 6px 0 0 18px;
+  padding: 8px 0 0 18px;
 }
 
 .main-temperature {
@@ -164,13 +169,13 @@ div .main-image {
 
 .specific-data li,
 .max-min-temp {
-  line-height: 20px;
+  line-height: 18px;
   font-size: 14px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 520px) {
   #weather-app {
-    padding: 30px 16px 10px;
+    padding: 30px 14px 10px;
   }
   .button {
     padding: 0px;
