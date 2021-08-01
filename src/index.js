@@ -90,7 +90,7 @@ function showTemperature(response) {
   );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
+    response.data.wind.speed*3.6
   );
   document.querySelector("#day-time").innerHTML = formatDate(response.data.dt*1000);
 

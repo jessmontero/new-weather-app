@@ -173,6 +173,10 @@ div .main-image {
   font-size: 14px;
 }
 
+div .change-units {
+  text-align: right;
+}
+
 @media (max-width: 520px) {
   #weather-app {
     padding: 30px 14px 10px;
